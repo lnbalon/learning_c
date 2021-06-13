@@ -1,5 +1,5 @@
 #### README
 
-This repo contains code for my daily exercises to learn the C programming language. 
+This repo serves as my playground in learning C programming.
 
-I adopted this new daily habit in my quest to master a new programming language before the year is out. 
+All notes are in Notion.
