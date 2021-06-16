@@ -6,9 +6,11 @@ int main (){
     int start, stop, increment;
     start = 1;
     stop = 10;
+    increment = 1;
     while (start <= stop){
-        printf("%d", start);
+        printf("%d\n", start);
         start = start + increment;
+
 
     }
     return 0;
