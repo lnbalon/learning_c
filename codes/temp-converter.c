@@ -5,7 +5,7 @@
 #define STEP 20
 
 
-float cel_fahr_while () {
+int cel_fahr_while () {
     printf("temperature converter using while loop...\n");
     printf("fahr---cel\n");
     float cel, fahr;
@@ -18,10 +18,22 @@ float cel_fahr_while () {
 }
 
 
+int cel_fahr_for () {
+    printf("temperature converter using for loop...\n");
+    printf("fahr---cel\n");
+    float fahr;
+    fahr = LOWER;
+    for (fahr = LOWER; fahr <= UPPER; fahr = fahr + STEP) {
+        printf("%3.0f %6.1f\n", fahr, (5.0/9.0) * (fahr - 32));
+    }
+}
+
+
+
 int main (){
 
     cel_fahr_while();
-
+    cel_fahr_for();
     
     return 0;
 }
