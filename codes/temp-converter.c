@@ -6,7 +6,8 @@
 
 
 float cel_fahr_while () {
-    printf("temperature converter using while loop...")
+    printf("temperature converter using while loop...\n");
+    printf("fahr---cel\n");
     float cel, fahr;
     fahr = LOWER;
     while (fahr <= UPPER) {
