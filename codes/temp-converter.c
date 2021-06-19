@@ -28,12 +28,24 @@ int cel_fahr_for () {
     }
 }
 
+int get_char () {
+    int c;
+    char value = ((c = getchar()) != EOF);
+    while (value)
+    {
+        printf("%d\n", c);
+        value = ((c = getchar()) != EOF);
+    }
+    return 0;
+}
+
 
 
 int main (){
 
-    cel_fahr_while();
-    cel_fahr_for();
-    
+    /* cel_fahr_while(); */
+    /* cel_fahr_for(); */
+    printf("%d", getchar() != EOF);
     return 0;
+
 }
