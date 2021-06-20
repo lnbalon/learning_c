@@ -1,11 +1,20 @@
 #include <stdio.h>
 
-int main () {
-    double nc;
+int line_counter () {
+    int c, nl;
+    nl = 0;
+    while ((c = getchar()) !=EOF) {
+        if (c == '\n') {
+            ++nl;
+        }
+    }
+    return nl;
+}
 
-    for (nc == 0; getchar()!=EOF; nc++)
-        ;
-    printf("\n");
-    printf("%.0f\n", nc);
+
+int main () {
+    int nl;
+    nl = line_counter();
+    printf("%d\n", nl);
     return 0;
 }
