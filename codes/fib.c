@@ -5,7 +5,7 @@ int fib(int n) {
     // A function that returns the nth Fibonacci Number
 
     int fib=1;
-
+    
     if (n==0) {
         return 0;
     }
@@ -21,7 +21,6 @@ int fib(int n) {
         }
     }
     return fib;
-
 }
 
 
