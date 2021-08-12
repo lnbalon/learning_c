@@ -4,25 +4,22 @@
 int fib(int n) {
     // A function that returns the nth Fibonacci Number
 
-    int fib;
+    int fib=1;
 
-    if (n <= 1) 
-        fib = 1;
+    if (n==0) {
+        return 0;
+    }
+    else if (n <= 2) {
+        return 1;
+    }
     else {
-        int counter, a, b;
-        counter = 1;
-        a = 1;
-        b =1;
-        fib = 1;
-        while (counter < n) {
-            
+        int counter=2, a=1, b=1;
+        for (counter; counter<n; counter++) {
             a = b;
             b = fib;
             fib = a + b;
-            counter++;
         }
     }
-    printf("%d\n",fib);
     return fib;
 
 }
@@ -32,7 +29,7 @@ int fib(int n) {
 int main () {
 
     int i;
-    for (i=0; i<10; i++)
-        fib(i);
+    for (i=0; i<=10; i++)
+        printf("%d: %d\n", i, fib(i));
     return 0;
 }
