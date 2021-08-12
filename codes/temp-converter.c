@@ -43,9 +43,8 @@ int get_char () {
 
 int main (){
 
-    /* cel_fahr_while(); */
-    /* cel_fahr_for(); */
-    printf("%d", getchar() != EOF);
+    cel_fahr_while();
+    cel_fahr_for(); 
     return 0;
 
 }
