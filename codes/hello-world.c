@@ -2,8 +2,11 @@
 
 int main () {
 
-    printf("Hello World!\n");
-    printf("Your name is LEONARD!\n");
+    char str[100];
+    int i;
 
-    return 0;
+    printf("Ente a value: ");
+    scanf("%d %s", &i, str);
+    printf("\nYou entered: %d, %s \n", i, str);
+
 }   
