@@ -1,12 +1,14 @@
 #include <stdio.h>
+#include <stdbool.h>
 
-int main () {
+int main (int argc, char *argv[]) {
 
-    char str[100];
-    int i;
+    int number_arguments = argc;
+    char *argument1 = argv[0];
+    char *argument2 = argv[1];
 
-    printf("Ente a value: ");
-    scanf("%d %s", &i, str);
-    printf("\nYou entered: %d, %s \n", i, str);
+    printf("Number of arguments: %d\n", number_arguments);
+    printf("Argument 1 is the program name: %s\n", argument1);
+    printf("Argument 2 is the command line argument : %s\n", argument2);
 
 }   
