@@ -16,13 +16,14 @@ int main () {
     scanf("%f", &num_hours);
 
     overtime = num_hours - OVERTIME;
-
+    
+    // get the salary
     if (num_hours <= 40)
         salary = num_hours * RATE;
     else
         salary = (((num_hours - 40) * 1.5) + 40) * RATE;
 
-
+    // get the tax
     if (salary <= 300)
         tax = salary * TAX_300;
     else if (300 < salary <= 450)
@@ -37,6 +38,7 @@ int main () {
         tax += (salary - 450) * TAX_REST;
     }
 
+    // print result
     printf("Gross Pay %.2f\n", salary);
     printf("Taxes %.2f\n", tax);
     printf("Net Pay %.2f\n", salary - tax);
