@@ -38,6 +38,7 @@ int main () {
     }
 
     printf("Gross Pay %.2f\n", salary);
+    printf("Taxes %.2f\n", tax);
     printf("Net Pay %.2f\n", salary - tax);
 
 }
