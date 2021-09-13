@@ -7,4 +7,15 @@ int main () {
         printf("%d, %d \n", i, j);
 
 
+    int looper_condition = 1;
+
+
+
+    while (looper_condition<5) {
+        looper_condition++;
+        printf("entered and exited a while loop\n");
+    }
+
+    
+
 }
