@@ -30,15 +30,12 @@ int main () {
             i++;
             continue;
         }
-
         else if (num < guess){
             printf("The number is less than your guess\n");
         }
-
         else if (num > guess){
             printf("The number is greater than your guess!\n");
         }
-
         else {
             printf("You Guessed Correctly! %d is equal to %d\n", guess, num);
             printf("You Win!\n");
@@ -52,6 +49,4 @@ int main () {
     }
 
 
-
-
-    }
+}
