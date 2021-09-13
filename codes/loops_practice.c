@@ -15,7 +15,11 @@ int main () {
         looper_condition++;
         printf("entered and exited a while loop\n");
     }
-
-    
+    int counter =1;
+    do {
+        
+        counter++;
+        printf("print this shit\n");
+    } while (counter<10);
 
 }
